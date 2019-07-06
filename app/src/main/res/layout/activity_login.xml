@@ -19,7 +19,7 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="ورود به سیستم"
-        android:textColor="@color/cardview_light_background"
+
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,7 +136,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btn_save"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"

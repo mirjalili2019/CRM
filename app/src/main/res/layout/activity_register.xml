@@ -6,20 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="right"
-    android:background="#FFF205"
+    android:background="@drawable/back"
     android:fillViewport="true"
     android:orientation="vertical"
     android:padding="5dp">
 
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right">
+        android:layout_gravity="right"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/edt_name"
-            android:layout_width="0dp"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -32,14 +33,12 @@
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColorHint="@android:color/darker_gray" />
+
 
         <EditText
-            android:id="@+id/edt_lastname"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -52,15 +51,45 @@
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_name" />
-
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_address"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:drawablePadding="10dp"
+            android:hint="تاریخ تولد"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/edt_name4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:drawablePadding="10dp"
+            android:hint="کدملی"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/edt_name5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -73,14 +102,11 @@
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_lastname" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name6"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -89,19 +115,15 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="تحصیلات"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment2"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name7"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -110,19 +132,15 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="عکس"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment3"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name8"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -131,19 +149,15 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="ایمیل"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment4"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name9"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
@@ -152,148 +166,80 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="موبایل"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment5"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name10"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="288dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="تلفن ثابت"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="0.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment6"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name11"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="نام کاربری"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="1.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment7"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name12"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="224dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="رمز ورود"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="0.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
-            android:id="@+id/edt_comment8"
-            android:layout_width="0dp"
+            android:id="@+id/edt_name13"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="156dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
+            android:hint="تکرار رمز"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="1.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
+            android:textColorHint="@android:color/darker_gray" />
 
-        <EditText
-            android:id="@+id/edt_comment9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="360dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/shape"
-            android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
-            android:padding="8dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="1.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
-
-        <EditText
-            android:id="@+id/edt_comment10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="428dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/shape"
-            android:drawablePadding="10dp"
-            android:hint="توضیحات رویداد"
-            android:orientation="vertical"
-            android:padding="8dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            app:layout_constraintHorizontal_bias="0.0"
-            mask:layout_constraintEnd_toEndOf="parent"
-            mask:layout_constraintStart_toStartOf="parent"
-            mask:layout_constraintTop_toBottomOf="@+id/edt_address" />
-
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 
 </ScrollView>
