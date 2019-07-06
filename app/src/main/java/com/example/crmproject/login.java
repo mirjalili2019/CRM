@@ -33,8 +33,8 @@ public class login extends AppCompatActivity {
         edt_user=findViewById(R.id.edt_user);
         edt_pass=findViewById(R.id.edt_pass);
         chk_save=findViewById(R.id.chk_save);
-        btn_save=findViewById(R.id.btn_save);
-        btn_pass=findViewById(R.id.btn_save);
+        btn_save=findViewById(R.id.btn_enter);
+        btn_pass=findViewById(R.id.btn_enter);
 
     }
 }
