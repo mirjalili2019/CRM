@@ -13,14 +13,22 @@ import com.example.crmproject.R;
 public class login extends AppCompatActivity {
     EditText edt_user,edt_pass;
     CheckBox chk_save;
+
     Button btn_save,btn_enter;
+
+    Button btn_login;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initilize();
+
         ////////sabtnam///////////
+
+        ////////register///////////
+
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +44,11 @@ public class login extends AppCompatActivity {
         edt_pass=findViewById(R.id.edt_pass);
         chk_save=findViewById(R.id.chk_save);
         btn_save=findViewById(R.id.btn_save);
-        btn_enter=findViewById(R.id.btn_enter);
+
+//        btn_enter=findViewById(R.id.btn_enter);
+//
+//        btn_login=findViewById(R.id.btn_login);
+
 
     }
 }

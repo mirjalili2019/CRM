@@ -20,8 +20,9 @@
 
         <EditText
             android:id="@+id/edt_name"
-            android:layout_width="360dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -29,6 +30,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="نام"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -38,8 +40,9 @@
 
         <EditText
             android:id="@+id/edt_name2"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -47,6 +50,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="نام خانوادگی"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -55,8 +59,9 @@
 
         <EditText
             android:id="@+id/edt_name3"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -64,6 +69,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="تاریخ تولد"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -72,8 +78,9 @@
 
         <EditText
             android:id="@+id/edt_name4"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -81,6 +88,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="کدملی"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -89,8 +97,9 @@
 
         <EditText
             android:id="@+id/edt_name5"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -98,6 +107,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="آدرس"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -106,8 +116,9 @@
 
         <EditText
             android:id="@+id/edt_name6"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -115,6 +126,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="تحصیلات"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -123,8 +135,9 @@
 
         <EditText
             android:id="@+id/edt_name7"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -132,6 +145,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="عکس"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -140,8 +154,9 @@
 
         <EditText
             android:id="@+id/edt_name8"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -149,6 +164,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="ایمیل"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -157,8 +173,9 @@
 
         <EditText
             android:id="@+id/edt_name9"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -166,6 +183,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="موبایل"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -174,8 +192,9 @@
 
         <EditText
             android:id="@+id/edt_name10"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -183,6 +202,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="تلفن ثابت"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -191,8 +211,9 @@
 
         <EditText
             android:id="@+id/edt_name11"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -200,6 +221,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="نام کاربری"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -208,8 +230,9 @@
 
         <EditText
             android:id="@+id/edt_name12"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -217,6 +240,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="رمز ورود"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"
@@ -225,8 +249,9 @@
 
         <EditText
             android:id="@+id/edt_name13"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
@@ -234,6 +259,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/shape"
             android:drawablePadding="10dp"
+            android:gravity="center"
             android:hint="تکرار رمز"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark"

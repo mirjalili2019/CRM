@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:mask="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DE1A1A"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
     tools:context=".activity.login">
+
 
     <TextView
         android:id="@+id/textView"
@@ -27,126 +29,135 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="71dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        mask:srcCompat="@drawable/login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_weight="0.40"
+        android:background="#DE1A1A"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="163dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_login" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/shape"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.058">
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:layout_weight="0.40"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/edt_user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="281dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="100dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/border"
+            android:background="@drawable/shape"
             android:drawableLeft="@drawable/user1"
             android:ems="10"
-            android:hint="     نام کاربری "
-            android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:gravity="center"
+            android:hint="نام کاربری"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/edt_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/border"
+            android:layout_width="281dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
             android:drawableLeft="@drawable/pass1"
             android:ems="10"
-            android:gravity="right"
-            android:hint="      رمز عبور"
-            android:inputType="textPersonName|text|textPassword"
-            android:padding="10dp"
-            android:paddingRight="10dp" />
+            android:gravity="center"
+            android:hint="رمز عبور"
+            android:inputType="textPassword" />
 
         <CheckBox
             android:id="@+id/chk_save"
-            android:layout_width="132dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:gravity="right"
-            android:text="مرا به خاطر بسپار"
-            android:textColor="@android:color/background_dark" />
-
-        <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:gravity="right"
-            android:text="فراموشی رمز"
-            android:textColor="@android:color/background_dark" />
+            android:layout_gravity="center"
+            android:text="مرا به خاطر بسپار" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:layout_margin="20dp"
+        <TextView
+            android:id="@+id/txt_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_enter"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/button"
-                android:text="ثبت نام"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_save"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button"
-                android:text="ورود"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
+            android:text="فراموشی رمز"
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.20"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/btn_login"
+            android:layout_width="150dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="ورود"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            mask:backgroundColor="#FFCB2F02"
+            mask:corners="20dp"
+            mask:normalHeight="6dp"
+            mask:pressedHeight="2dp"
+            mask:shadowColor="#5D5E60" />
+
+        <ru.katso.livebutton.LiveButton
+                android:id="@+id/btn_save"
+                android:layout_width="150dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="ثبت نام"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                mask:backgroundColor="#FFCB2F02"
+                mask:corners="20dp"
+                mask:normalHeight="6dp"
+                mask:pressedHeight="2dp"
+                mask:shadowColor="#5D5E60" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
