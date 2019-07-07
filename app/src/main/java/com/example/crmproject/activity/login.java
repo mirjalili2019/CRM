@@ -14,7 +14,7 @@ public class login extends AppCompatActivity {
     EditText edt_user,edt_pass;
     CheckBox chk_save;
 
-    Button btn_save,btn_enter;
+    Button btn_save;
 
     Button btn_login;
 
@@ -36,6 +36,14 @@ public class login extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l=new Intent(login.this, dashboard.class);
+                startActivity(l);
+            }
+        });
     }
 
 
@@ -46,8 +54,8 @@ public class login extends AppCompatActivity {
         btn_save=findViewById(R.id.btn_save);
 
 //        btn_enter=findViewById(R.id.btn_enter);
-//
-//        btn_login=findViewById(R.id.btn_login);
+
+        btn_login=findViewById(R.id.btn_login);
 
 
     }
