@@ -18,9 +18,15 @@ android {
         }
     }
 }
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
 
 dependencies {
-
+    implementation 'com.github.markushi:circlebutton:1.1'
     implementation 'com.yarolegovich:lovely-dialog:1.1.0'
 
     implementation 'com.github.dakatso:livebutton:1.0.0'

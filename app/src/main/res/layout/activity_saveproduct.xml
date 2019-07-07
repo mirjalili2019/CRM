@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backcolor"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/maintool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="#DE1A1A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="492dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="0.4"
+            android:background="@android:color/background_light"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backcolor"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_pro_group1"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape"
+                        android:drawableRight="@drawable/category"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:hint="دسته بندی کالا"
+                        android:padding="8dp"
+                        android:shadowColor="#5D5E60"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/edt_pro_group2"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape"
+                        android:drawableRight="@drawable/category"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:hint="زیر مجموعه کالا"
+                        android:padding="8dp"
+                        android:shadowColor="#5D5E60"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/edt_pro_group3"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape"
+                        android:drawableRight="@drawable/category"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:hint="مدل کالا"
+                        android:padding="8dp"
+                        android:shadowColor="#5D5E60"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/edt_pro_text2"
+                        android:layout_width="300dp"
+                        android:layout_height="89dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape"
+                        android:drawableRight="@drawable/text"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:hint="توضیحات"
+                        android:inputType="textMultiLine"
+                        android:padding="8dp"
+                        android:shadowColor="#5D5E60"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/edt_price"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape"
+                        android:drawableRight="@drawable/price"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:hint="قیمت"
+                        android:padding="8dp"
+                        android:shadowColor="#5D5E60"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:switchPadding="10dp"
+                        android:text="نمایش قیمت برای مشتری"
+                        android:textColor="@android:color/background_dark"
+                        android:textOff="خیر"
+                        android:textOn="بله" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/background_light"
+            android:gravity="center|top"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/pdf"
+                        android:padding="8dp"
+                        android:text="افزودنPDF"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/video"
+                        android:padding="8dp"
+                        android:text="افزودن فیلم"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/pic"
+                        android:paddingRight="8dp"
+                        android:text="افزودن عکس"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="202dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="ثبت"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
